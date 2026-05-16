@@ -20,8 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-black text-white min-h-screen flex flex-col">
-        {children}
+      <body className="antialiased bg-black text-white min-h-screen flex flex-col overflow-x-hidden w-full">
+        <div className="overflow-x-hidden w-full">
+          {children}
+        </div>
         <FloatingActions />
       </body>
     </html>
